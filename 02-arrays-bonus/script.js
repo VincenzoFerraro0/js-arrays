@@ -29,7 +29,7 @@ const longNames  =[];
 for (let i = 0; i < teachers.length; i++) {
   if (teachers[i].length >= 5) {
     longNames.push(teachers[i]);
-  }
+  };
 }
 console.log(longNames);
 
@@ -42,7 +42,26 @@ console.log(teachers);
 // 4. Verifica se 'Fabio' è presente nell'array teachers
 // e salva il risultato nella variabile isFabioPresent
 
-let isFabioPresent = null; 
+/* MINI TASK
+    -Tsformiamo la const in let e gli assegniamo il valore booleano false/0
+    -Utilizziamo un ciclo for per iterare attraverso l'array teachers.
+    -Controlliamo se nell'array Fabio è presente (teachers[i] === 'Fabio')
+    - Se si verifica la condizione la variabile isFabioPresent diventa true
+*/
+
+
+let isFabioPresent = false; // la variabile inizia a false
+
+// Ciclo attraverso l'array
+for (let i = 0; i < teachers.length; i++) {
+  if (teachers[i] === 'Fabio') {
+    isFabioPresent = true; // Se trovi "Fabio", imposta a true
+    break; // Esci dal ciclo una volta trovato
+  }
+};
+
+console.log("Fabio è presente?", isFabioPresent); // Stampa il risultato: true se trovato, false se no
+
 
 
 
